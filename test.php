@@ -28,7 +28,7 @@ $lexer = new ListLexer(($file));
 $token = $lexer->nextToken();
 */
 
-$input = 'Salut je suis un oiseau nomme sami';
+$input = '#ttt Alias #Alias Alias# < <ss <#';
 $lexer = new ListLexer($file);
 $token = $lexer->nextToken();
 
