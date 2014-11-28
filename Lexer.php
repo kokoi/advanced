@@ -1,3 +1,4 @@
+<php
 abstract class Lexer {
 
     const EOF       = -1; // represent end of file char
@@ -27,3 +28,4 @@ abstract class Lexer {
     public abstract function nextToken();
     public abstract function getTokenName($tokenType);
 }
+?>
