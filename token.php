@@ -1,5 +1,5 @@
 <?php
-
+/*
 class Token {
     public $type;
     public $text;
@@ -23,6 +23,39 @@ class Token {
             $i++;
         } else {
       //      print_r($file_lexer);
+            return $file_lexer;
+        }
+    }
+
+}*/
+
+class Token {
+    public $type;
+    public $text;
+    public $options;
+
+    public function Token($type, $options, $text, $mode) {
+        $this->type = $type;
+        $this->option = $options;
+        $this->text = $text;
+        $file = $this->storage($mode);
+
+        if ($mode == 2)
+            print_r($file);
+    }
+
+    public function storage($mode) {
+        static $file_lexer;
+        static $i = 0;
+
+        if ($mode == 1) {
+            $more->type = $this->type;
+            $more->text = $this->text;
+            $more->options = $this->options;
+            $file_lexer[$i] = $more;
+            $i++;
+        } else {
+            //      print_r($file_lexer);
             return $file_lexer;
         }
     }
