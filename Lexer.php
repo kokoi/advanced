@@ -1,5 +1,3 @@
-<?php
-
 abstract class Lexer {
 
     const EOF       = -1; // represent end of file char
